@@ -19,10 +19,10 @@ Use `#!/usr/bin/env bash` as the shebang line for portability across different e
 
 Use `${var}` instead of `$var` for variable references to improve readability and avoid ambiguity.
 
-### Message formatting
+### Message reporting
 
 * Use `printf` instead of `echo` for formatted output.
-* Prepend log level tags in the following format:
+* Prepend log level tags in the following format(except for help text):
     + `Info:`
     + `Warning:`
     + `Error:`
