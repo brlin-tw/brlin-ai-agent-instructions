@@ -75,6 +75,7 @@ The following script should be used for script creation, rewrites, and style ref
 init(){
     printf \
         'Info: Operation completed without errors.\n'
+    exit 0
 }
 
 printf \
