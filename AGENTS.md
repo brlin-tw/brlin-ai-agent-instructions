@@ -72,6 +72,19 @@ set -o errtrace  # Ensure the error trap is inherited
 
   The only exception is when using regex matching, which requires `[[ ... ]]`.  When doing so always define a regex_pattern variable instead of embedding the regex directly in the conditional expression.
 
+### Pattern matching
+
+* Use the `[[ ... ]]` construct for validating user inputs when applicable.
+
+  Store the regex pattern in a `regex_` prefix variable instead of embedding it in the conditional expression.  For example:
+
+   ```bash
+    local regex_digits='^[[:digit:]]+$'
+    if [[ "${user_input}" =~ ${regex_digits} ]]; then
+        # Do something when the input is a number
+    fi
+    ```
+
 ### Functions
 
 * Use `function_name(){ ... }` syntax for defining functions. Do not use the `function` keyword.
