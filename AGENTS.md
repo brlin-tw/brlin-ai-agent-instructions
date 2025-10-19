@@ -57,7 +57,6 @@ set -o errtrace  # Ensure the error trap is inherited
 * Use the `test` shell built-in for conditional expressions.  For example, use `if test -f "file"` instead of `if [[ -f "file" ]]`.
 
   The only exception is when using regex matching, which requires `[[ ... ]]`.  When doing so always define a regex_pattern variable instead of embedding the regex directly in the conditional expression.
-* Do not use AND/OR lists syntax.
 
 ### Functions
 
@@ -76,6 +75,11 @@ set -o errtrace  # Ensure the error trap is inherited
 * Always use `return` to return an exit status from functions.  Only use the `exit` builtin in the `init`/`main` function as it is the main logic of the script.
 * Place all non `init`/`main` functions _after_ the `init`/`main` function in the script. This allows script readers to access the main script logic easily.
 * Use imperative tense for function names.
+
+### Error Handling
+
+* Always check the exit status of commands and handle errors appropriately, don't rely solely on the ERR trap.
+* Do not use AND/OR lists syntax.
 
 ### Script template
 
