@@ -23,6 +23,7 @@ This also applies to positional parameters, e.g., use `${1}` instead of `$1`.
 
 ### Message reporting
 
+* If the program's output is intended to be used as input for other programs, avoid implementing non-error messages at all.
 * Use `printf` instead of `echo` for formatted output.
 * Prepend log level tags in the following format(except for help text):
     + `Info:`
