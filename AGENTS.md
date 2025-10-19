@@ -85,6 +85,14 @@ set -o errtrace  # Ensure the error trap is inherited
     fi
     ```
 
+### Passing data to subprocesses
+
+* Using the Here Strings syntax (`<<<`) is preferred when passing small amounts of data to subprocesses.  For example:
+
+    ```bash
+    grep 'pattern' <<< "${data_variable}"
+    ```
+
 ### Functions
 
 * Use `function_name(){ ... }` syntax for defining functions. Do not use the `function` keyword.
