@@ -53,7 +53,20 @@ If the script contains functions, also include:
 set -o errtrace  # Ensure the error trap is inherited
 ```
 
-### Conditional expressions
+### Conditional constructs
+
+* When using `if...else` constructs, always check the incorrect condition first.  For example:
+
+    ```bash
+    if ! is_port_valid "${user_input}"; then
+        printf \
+            'Error: Invalid port number, please try again.\n' \
+            1>&2
+        return 1
+    else
+        # Do something when the condition is expected
+    fi
+    ```
 
 * Use the `test` shell built-in for conditional expressions.  For example, use `if test -f "file"` instead of `if [[ -f "file" ]]`.
 
