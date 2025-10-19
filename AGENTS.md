@@ -35,10 +35,6 @@ This also applies to positional parameters, e.g., use `${1}` instead of `$1`.
 
 Use ShellCheck for linting.
 
-### Function arguments
-
-Use `local var="$1"; shift` to assign function arguments to local variables.  This allows cleaner diffs when adding or removing arguments.
-
 ### Defensive interpreter behavior
 
 The following shell options should be set at the beginning of each script to ensure robust error handling:
@@ -62,6 +58,24 @@ set -o errtrace  # Ensure the error trap is inherited
 
   The only exception is when using regex matching, which requires `[[ ... ]]`.  When doing so always define a regex_pattern variable instead of embedding the regex directly in the conditional expression.
 * Do not use AND/OR lists syntax.
+
+### Functions
+
+* Use `function_name(){ ... }` syntax for defining functions. Do not use the `function` keyword.
+* Always use `local` for function-local variables.
+* Do not use global variables inside functions. Instead, pass them as arguments.
+* Use the following pattern to retrieve function arguments:
+
+    ```bash
+    local var="${1}"; shift
+    ```
+
+  Always use `${1}` parameter expansion and append `shift` command even when the function only has one parameter. This allows cleaner diffs when adding or removing arguments.
+
+* Validate input parameters at the beginning of functions
+* Always use `return` to return an exit status from functions.  Only use the `exit` builtin in the `init`/`main` function as it is the main logic of the script.
+* Place all non `init`/`main` functions _after_ the `init`/`main` function in the script. This allows script readers to access the main script logic easily.
+* Use imperative tense for function names.
 
 ### Script template
 
