@@ -154,7 +154,7 @@ determine_required_commands(){
         ;;
     esac
 
-    printf '%s' "${required_commands[@]}"
+    printf '%s' "${required_commands[*]}"
 }
 
 # Check whether the required commands for the current distribution are available
