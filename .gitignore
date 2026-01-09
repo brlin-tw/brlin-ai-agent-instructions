@@ -91,3 +91,7 @@
 
 # Don't track continuous integration virtual environments
 /continuous-integration/venv/
+
+# Do track Claude Agent Skills
+!/.claude
+/.claude/settings.local.json
