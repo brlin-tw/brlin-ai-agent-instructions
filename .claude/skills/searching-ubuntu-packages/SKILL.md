@@ -1,9 +1,9 @@
 ---
-name: search-ubuntu-packages
+name: searching-ubuntu-packages
 description: Provide guidelines on how to search the proper Ubuntu package name for a given Ubuntu release.  Should be used when searching for package names or updating package names to newer releases.
 ---
 
-# The search-ubuntu-packages skill
+# The searching-ubuntu-packages skill
 
 This skill provides guidelines on how to search the proper Ubuntu package name for a given Ubuntu release.  It should be used when searching for package names or updating package names to newer releases.
 
