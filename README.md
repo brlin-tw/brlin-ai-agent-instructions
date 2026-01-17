@@ -18,6 +18,15 @@ Copy the following files to your project:
 
 Then, customize the copied files as needed to fit your project's requirements.
 
+## References
+
+The following materials are referenced during the development of this project:
+
+* [AGENTS.md](https://agents.md/)  
+  Explains the concepts of the AGENTS.md file.
+* [Agent Skills](https://agentskills.io/home)  
+  Explains the concepts of Agent Skills.
+
 ## Licensing
 
 Unless otherwise noted([comment headers](https://reuse.software/spec-3.3/#comment-headers)/[REUSE.toml](https://reuse.software/spec-3.3/#reusetoml)), this product is licensed under [the 4.0 International version of the Creative Commons Attribution-SharedAlike License](https://creativecommons.org/licenses/by-sa/4.0/), or any of its more recent versions of your preference.
