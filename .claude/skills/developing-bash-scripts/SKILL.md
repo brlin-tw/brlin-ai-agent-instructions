@@ -123,7 +123,7 @@ set -o errtrace  # Ensure the error trap is inherited
 
 ### Script template
 
-[The template script](template.sh) script should be used for script creation, rewrites, and style references.
+[The template script](template.sh) script should be used for creation of new scripts.
 
 For the following placeholders in the template:
 
