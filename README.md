@@ -5,6 +5,19 @@ Provide guidelines and best practices for creating and managing AI agents effect
 <https://gitlab.com/brlin/brlin-ai-agent-instructions>  
 [![The GitLab CI pipeline status badge of the project's `main` branch](https://gitlab.com/brlin/brlin-ai-agent-instructions/badges/main/pipeline.svg?ignore_skipped=true "Click here to check out the comprehensive status of the GitLab CI pipelines")](https://gitlab.com/brlin/brlin-ai-agent-instructions/-/pipelines) [![GitHub Actions workflow status badge](https://github.com/brlin-tw/brlin-ai-agent-instructions/actions/workflows/check-potential-problems.yml/badge.svg "GitHub Actions workflow status")](https://github.com/brlin-tw/brlin-ai-agent-instructions/actions/workflows/check-potential-problems.yml) [![pre-commit enabled badge](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white "This project uses pre-commit to check potential problems")](https://pre-commit.com/) [![REUSE Specification compliance badge](https://api.reuse.software/badge/gitlab.com/brlin/brlin-ai-agent-instructions "This project complies to the REUSE specification to decrease software licensing costs")](https://api.reuse.software/info/gitlab.com/brlin/brlin-ai-agent-instructions)
 
+## Usage
+
+Copy the following files to your project:
+
+* `.claude/skills/`  
+  Agent skills for various tasks.
+* [AGENTS.md](AGENTS.md)  
+  Predefined AI agent configurations for various purposes.  See [AGENTS.md](https://agents.md/) for details.
+* [GEMINI.md](GEMINI.md)  
+  Compatibility symbolic link for Gemini CLI.
+
+Then, customize the copied files as needed to fit your project's requirements.
+
 ## Licensing
 
 Unless otherwise noted([comment headers](https://reuse.software/spec-3.3/#comment-headers)/[REUSE.toml](https://reuse.software/spec-3.3/#reusetoml)), this product is licensed under [the 4.0 International version of the Creative Commons Attribution-SharedAlike License](https://creativecommons.org/licenses/by-sa/4.0/), or any of its more recent versions of your preference.
