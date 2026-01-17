@@ -1,4 +1,4 @@
-# AI agent instruction files of Buo-ren Lin (IN DEVELOPMENT)
+# AI agent instruction files of Buo-ren Lin
 
 Provide guidelines and best practices for creating and managing AI agents effectively.
 
