@@ -11,3 +11,7 @@
 	path = .claude/skills/searching-ubuntu-packages
 	url = https://gitlab.com/brlin/searching-ubuntu-packages.git
 	ignore = dirty
+[submodule "The developing-bash-scripts agent skill"]
+	path = .claude/skills/developing-bash-scripts
+	url = https://gitlab.com/brlin/developing-bash-scripts.git
+	ignore = dirty
