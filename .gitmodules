@@ -17,3 +17,8 @@
 	url = https://gitlab.com/brlin/developing-bash-scripts.git
 	ignore = dirty
 	shallow = true
+[submodule "The developing-ansible-playbooks agent skill"]
+	path = .claude/skills/developing-ansible-playbooks
+	url = https://gitlab.com/brlin/developing-ansible-playbooks.git
+	ignore = dirty
+	shallow = true
