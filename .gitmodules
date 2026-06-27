@@ -22,3 +22,8 @@
 	url = https://gitlab.com/brlin/developing-ansible-playbooks.git
 	ignore = dirty
 	shallow = true
+[submodule "The determining-git-commit-messages agent skill"]
+	path = .claude/skills/determining-git-commit-messages
+	url = https://gitlab.com/brlin/determining-git-commit-messages.git
+	ignore = dirty
+	shallow = true
