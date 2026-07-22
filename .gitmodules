@@ -27,3 +27,8 @@
 	url = https://gitlab.com/brlin/determining-git-commit-messages.git
 	ignore = dirty
 	shallow = true
+[submodule "The implementing-new-features agent skill"]
+	path = .claude/skills/implementing-new-features
+	url = https://gitlab.com/brlin/implementing-new-features.git
+	ignore = dirty
+	shallow = true
