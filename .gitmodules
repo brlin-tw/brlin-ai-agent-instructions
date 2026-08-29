@@ -27,6 +27,11 @@
 	url = https://gitlab.com/brlin/determining-git-commit-messages.git
 	ignore = dirty
 	shallow = true
+[submodule "The ensuring-human-in-the-loop agent skill"]
+	path = .claude/skills/ensuring-human-in-the-loop
+	url = https://gitlab.com/brlin/ensuring-human-in-the-loop.git
+	ignore = dirty
+	shallow = true
 [submodule "The implementing-new-features agent skill"]
 	path = .claude/skills/implementing-new-features
 	url = https://gitlab.com/brlin/implementing-new-features.git
