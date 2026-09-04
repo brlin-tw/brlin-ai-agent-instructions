@@ -38,6 +38,9 @@
 # https://reuse.software/
 !.reuse/
 
+# Do track AI agent instruction files
+!/.agents/
+
 # Do track GitLab CI configuration file
 !/.gitlab-ci.yml
 
