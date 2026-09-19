@@ -22,3 +22,7 @@ If you don't have the concept of Agent Skills, refer to the following instructio
 
 * Explicitly state which skills and rules are in effect.
 * Provide findings, recommendations, or code while enforcing all loaded constraints. If any conflicts arise, ask for clarification before diverging.
+
+## Commit messages
+
+Follow [the instructions of the "When no existing commit style found" section of the determining-git-commit-messages agent skill](.agents/skills/determining-git-commit-messages/SKILL.md#when-no-existing-commit-style-found) when drafting commit messages.
