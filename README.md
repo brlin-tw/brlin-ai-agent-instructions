@@ -9,7 +9,7 @@ Provide guidelines and best practices for creating and managing AI agents effect
 
 Copy the following files to your project:
 
-* `.claude/skills/`  
+* [.agents/skills/](.agents/skills/)  
   Agent skills for various tasks.
 * [AGENTS.md](AGENTS.md)  
   Predefined AI agent configurations for various purposes.  See [AGENTS.md](https://agents.md/) for details.
