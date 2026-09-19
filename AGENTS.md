@@ -20,7 +20,7 @@ If you don't have the concept of Agent Skills, refer to the following instructio
 
 **Response contract**:
 
-* Explicitly state which skills and rules are in effect.
+* Explicitly state which skills and rules are in effect, state the full skill name in plaintext, do not use any link markup.
 * Provide findings, recommendations, or code while enforcing all loaded constraints. If any conflicts arise, ask for clarification before diverging.
 
 ## Commit messages
